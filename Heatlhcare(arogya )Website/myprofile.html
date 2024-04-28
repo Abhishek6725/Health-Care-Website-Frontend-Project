@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My profile</title>
+  
+  <style>
+    /* --Navbar-- */
+    * {
+      margin: 0px;
+    }
+
+    .font {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #navbar {
+      position: sticky;
+      top: 0px;
+      background-color: #10847e;
+      border: 1px solid transparent;
+      height: 90px;
+    }
+
+    #upperNav {
+      margin-top: 20px;
+      margin-left: 700px;
+
+      text-align: center;
+    }
+
+    #upperNav>div:first-child {
+      /* border: 1px solid red; */
+      display: flex;
+      width: 100%;
+      margin: auto;
+
+    }
+
+    #upperNav>div>img {
+      width: 180px
+    }
+
+    /* naaaaaaaaaaaaaaaaaaaaavvvvvvvvvvvvvvvvvvvvbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaarrrrrrrrrrrrrrrrrrr */
+
+    #lower {
+      /* border: 1px solid red; */
+      display: flex;
+      margin: auto;
+      width: 70%;
+      height: 500px;
+
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+
+    #lowerright {
+      /* border:1px solid red; */
+      width: 60%;
+      height: 270px;
+      display: grid;
+      grid-template-columns: (1, 1fr);
+      grid-template-rows: (7, 30px);
+      line-height: 25px;
+      padding: 25px;
+      box-shadow: 0 3px 20px 0 rgb(0 0 0 / 23%);
+      margin-left: 40px;
+      border-radius: 5px;
+    }
+
+    #lowerright>p {
+      font-size: 20px;
+      color: #57666f;
+      margin-left: 2px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #lowerright>input {
+      border: 1px solid rgb(196, 196, 196);
+      border-radius: 3px;
+      height: 30px;
+      width: 90%;
+      color: rgb(224, 224, 224);
+      font-size: 12px;
+    }
+
+    #lowerright>div {
+      /* border: 1px solid; */
+      text-align: right;
+    }
+
+    #lowerright>div>button {
+      text-align: right;
+      padding: 5px 25px;
+      margin-right: 15px;
+      background-color: rgb(208, 240, 218);
+      color: rgb(198, 26, 26);
+      border: 2;
+
+    }
+
+    #lowerright>div>button:hover {
+      background-color: #10847e;
+      color: white;
+    }
+
+    #lowerleft>div:first-child {
+      height: 100px;
+      width: 100%;
+      background-color: #8573E1;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #lowerleft>div:last-child {
+      margin-top: 15px;
+      height: 420px;
+      width: 100%;
+      border: 1px solid rgb(224, 224, 224);
+
+    }
+
+    #lowerleft>div:first-child>div:nth-child(2) {
+      width: 170px;
+    }
+
+    #lowerleft>div:first-child>div:nth-child(1) {
+      margin-left: 15px;
+      margin-top: 25px;
+    }
+
+    #lowerleft>div:first-child>div:nth-child(3) {
+      margin-top: 35px;
+    }
+
+    #lowerleft>div:first-child>div:nth-child(3):hover {
+      cursor: pointer;
+    }
+
+    #lowerleft>div:first-child>div>p {
+      font-size: 15px;
+      margin-left: px;
+      font-family: 'Open Sans', sans-serif;
+
+    }
+
+    #lowerleft>div:first-child>div:first-child>img {
+      width: 25px;
+    }
+
+    #lowerleft>div:first-child>div {
+      margin-top: 15px;
+    }
+
+    #lowerleftdown {
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(15, 40px);
+      gap: 10px;
+      border-radius: 4px;
+    }
+
+    #lowerleftdown>div {
+      margin-top: 10px;
+    }
+
+    #lowerleftdown>div {
+     
+      height: 40px;
+      display: flex;
+    }
+
+    #lowerleftdown>div>img {
+      width: 23.99px;
+      height: 23.99px;
+      margin-left: 20px;
+    }
+
+    #lowerleftdown>div>p {
+      font-family: 'Open Sans', sans-serif;
+      color: #4F585E;
+      margin-left: 20px;
+      font-size: 15px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    #pagehead {
+      height: 40px;
+      width: 500px;
+      margin: auto;
+      margin-top: 90px;
+      margin-left: 15%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #lowerleft>div>div:last-child {
+      cursor: pointer;
+    }
+
+    /* ffffffffffffffffffffffffffffffffffflooooooooooooooooooooooooooooooooooooootttttttttttttteeeeeeeeeerrrrrrrrrrrrrr */
+
+    #fourthdiv {
+      height: 10px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      /* border: 1px solid black; */
+      margin-top: 80px;
+      background-color: #88d9eb;
+    }
+    #rights{
+      font-size: large;
+      margin-left: 600px;
+      margin-top: -10px;
+    }
+    #navbar{
+      color: #10847e;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- -- Navbar start-- -->
+  <div id="navbar">
+    <div id="upperNav">
+      <div id="logo">
+        <img src="assets/logo1.png" alt="Arogya-Care image">
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- --Navbar end-- -->
+  <div></div>
+  <div id="pagehead">
+    <div style="width:40px;height:40px;border-radius: 20px;background-color:#10847e ;text-align: center;border: none;">
+      <p style="color: white;font-size: 20px;margin-top: 7px;">Y</p>
+    </div>
+    <div style="width:170px;height:18px;margin-top: 20px;">
+      <p style="color:#4f585e;font-weight:bolder;font-family: 'Open Sans', sans-serif; margin-left: 20%;">EDIT PROFILE
+      </p>
+    </div>
+  </div>
+  <div id="lower">
+    <div id="lowerleft">
+      <div>
+        <div><img src="https://assets.pharmeasy.in/web-assets/dist/3864b471.svg"></div>
+        <div>
+          <p>Save flat 5% extra on medicines &amp; enjoy Fast delivery </p>
+        </div>
+        <div><img src="https://assets.pharmeasy.in/web-assets/dist/ab5ce12b.svg" /></div>
+      </div>
+      <div id="lowerleftdown">
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/6d757b2d.svg" />
+          <a href="cart.html">
+            <p style="font-weight:bold;font-size:12px;font-family:'Open Sans', sans-serif;
+                        color:#4F585E;
+                        margin-left: 20px;
+                        font-size: 15px;
+                        margin-top: 5px;cursor: pointer;">Your Orders</p>
+          </a>
+        </div>
+        <div>
+          <p style="margin-left: 65px;">Medicine/Healthcare</p>
+        </div>
+        <div><a href="Labtest.html">
+            <p style="font-family: 'Open Sans', sans-serif;
+                    color:#4F585E;
+                    margin-left: 20px;
+                    font-size: 15px;
+                    margin-top: 5px;
+                    cursor: pointer;margin-left: 65px;">Lab Test</p>
+          </a></div>
+
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/5673272f.svg" />
+          <p style="font-weight:bold;font-size:13px">Medical Records</p>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/a2995809.svg" />
+          <p style="font-weight:bold;font-size:13px">Profile Settings</p>
+        </div>
+        <div style="background-color: #f4f7fb;">
+          <p style="margin-left: 65px;font-weight:bold;font-size:13px;color: #10847e;">Edit Profile</p>
+        </div>
+        <div>
+          <p style="margin-left: 65px;">Manage address</p>
+        </div>
+
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/9a22e94b.svg" />
+          <a href="index.html">
+            <p id="log-out" style="font-weight:bold;font-size:12px;font-family:'Open Sans', sans-serif;
+                    color:#4F585E;
+                    margin-left: 20px;
+                    font-size: 15px;
+                    margin-top: 5px;">Log-out</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+ 
+      <div id="lowerright">
+        <p>Name</p>
+        <input type="text" id="name" placeholder="Name" />
+        <p>Mobile Number</p>
+        <input type="text" id="phone" placeholder="Phone Number" />
+        <p>Email</p>
+        <input type="text" id="email" placeholder="Email" /><br>
+        <div><button id="saveBtn">SAVE</button></div>
+      </div>
+  </div>
+
+  <!-- fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+  
+    <div id="fourthdiv">
+      <div id="rights">
+        <p> &#169 2024 Arogya-Care. All Rights Reserved</p>
+      </div>
+    </div>
+    <script>
+    document.getElementById("saveBtn").addEventListener("click", function() {
+      var name = document.getElementById("name").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+      var email = document.getElementById("email").value.trim();
+
+      if (name === "" || phone === "" || email === "") {
+        alert("Please fill in all the details.");
+      } else {
+        alert("Your account has been updated.");
+        window.location.href = "index.html";
+      }
+    });
+
+    document.getElementById("log-out").addEventListener("click", function(event) {
+      event.preventDefault();
+      var confirmation = confirm("Are you sure you want to log out?");
+      if (confirmation) {
+        alert("Logged out successfully.");
+        // Redirect to logout page or perform logout action here
+      }
+    });
+    </script>
+</body>
+</html>

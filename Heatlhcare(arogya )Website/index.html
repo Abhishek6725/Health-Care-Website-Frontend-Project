@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="border">
+
+            <a href="/">
+                <img src="./assets/logo1.png" width="100px" alt="">
+            </a>
+        </div>
+
+        <div class="nav-country border">
+            <img src="./assets/location_icon.png" height="20px" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>India</h1>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+
+            <input type="text" class="nav-search-input" placeholder="Arogya search">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+
+        <div class="nav-language border">
+            <img src="./assets/prescription.png" width="25px" alt="">
+            <div class="dropdown">
+                <p>Prescription</p>
+                <div class="contents">
+                    <div id="upload-prescription">Upload Pres.</div>
+                    <div id="take-photo">Take Photo</div>
+                </div>
+            </div>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+
+        <div class="nav-text border">
+            <div class="dropdown">
+                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+                <div class="contents">
+                    <div><a href="myprofile.html">Profile</a></div>
+                    <div><a href="Cart.html">
+                            <h1> Orders</h1>
+                        </a></div>
+                    <div>Records</div>
+                    <div>Notification</div>
+                    <div id="log-out">Logout</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-text border">
+            <a href="Login&Signup.html"><h1>Login</h1></a>
+        </div>
+        <div class="border">
+            <a href="Cart.html" class="nav-cart">
+                <img src="./assets/cart-icon-28344.png" width="35px" alt="">
+                <h4>Cart</h4>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="nav-bottom1">
+        <ul>
+            <a class="border" href="#buy-medicine">Buy Medicines</a>
+            <a class="border" href="#doctor">Find Doctors</a>
+            <a class="border">Lab Tests</a>
+            <a class="border">Circle Membership</a>
+            <a class="border">Health Records</a>
+            <a class="border">Free Counsiling</a>
+        </ul>
+    </div>
+
+    <div class="nav-bottom2">
+        <div>
+
+            <p class="border"><a href="#arogya-products">Arogya Products</a></p>
+            <p class="border"><a href="#baby-care">Baby Care</a> </p>
+            <p class="border">Health Drinks & Supplements</p>
+            <p class="border"><a href="#arogya-products">Women Care</a></p>
+            <p class="border"><a href="#personal-care">Personal Care</a></p>
+            <p class="border"><a href="#ayurveda">Ayurveda</a></p>
+            <p class="border">Health Devices</p>
+            <p class="border">Home Essentials</p>
+            <p class="border">Health Condition</p>
+        </div>
+    </div>
+
+    <div class="header-slider">
+        <a href="#" class="control-pre">&#129144</a>
+        <a href="#" class="control-next">&#129146</a>
+        <ul>
+            <div class="hero-section">
+                <marquee behavior="" direction="">#ᴀʀᴏɢʏᴀ ᴍᴜʟᴛɪsᴘᴇᴄɪᴀʟɪᴛʏ ʜᴏsᴘɪᴛᴀʟs</marquee>
+
+            </div>
+
+            <img src="./assets/banner/header4.png" class="header-image" alt="">
+            <img src="./assets/banner/header1.png" class="header-image" alt="">
+            <img src="./assets/banner/header3.png" class="header-image" alt="">
+            <img src="./assets/banner/header2.png" class="header-image" alt="">
+            <img src="./assets/banner/header5.jpg" class="header-image" alt="">
+        </ul>
+    </div>
+
+    <div class="box-row header-box">
+
+        <div class="box-col">
+            <h3>Cardiology Specality</h3>
+            <img src="./assets/hospital1.jpg" alt="">
+            <a href="/">Shiv Hospital</a>
+        </div>
+        <div class="box-col">
+            <h3>Neurology Specality</h3>
+            <img src="./assets/hospital2.jpg" alt="">
+            <a href="/">Om Hospital</a>
+        </div>
+        <div class="box-col">
+            <h3>Maternity Specality</h3>
+            <img src="./assets/hospital3.jpg" alt="">
+            <a href="/">Sai Hospital</a>
+        </div>
+        <div class="box-col">
+            <h3>All Specality</h3>
+            <img src="./assets/hospital4.jpg" alt="">
+            <a href="/">Ambar Hospital</a>
+        </div>
+    </div>
+
+    <div class="box-row" id="doctor">
+        <div class="box-col">
+            <h3>Dr. Mayura</h3>
+            <img src="./assets/doctor-1.jpg" alt="">
+            <a href="">Book Appointment</a>
+            <!-- <a id="scheduleButton" href="#" class="main-btn mt-4 ms-3">Appointment</a>
+            <script src="https://cdn.jsdelivr.net/npm/dayschedule-widget@latest/dist/dayschedule-widget.min.js"
+                defer></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const scheduleButton = document.getElementById('scheduleButton');
+
+                    scheduleButton.addEventListener('click', function () {
+                        daySchedule.initPopupWidget({
+                            url: 'https://nitesh-giri.dayschedule.com' // Replace with your DaySchedule URL
+                        });
+                    });
+                });
+            </script> -->
+        </div>
+        <div class="box-col">
+            <h3>Dr. Akash</h3>
+            <img src="./assets/doctor-2.jpg" alt="">
+            <a href="/">Book Appointment</a>
+        </div>
+        <div class="box-col">
+            <h3>Dr. Nitesh</h3>
+            <img src="./assets/doctor-3.jpg" alt="">
+            <a id="scheduleButton" href="#" class="main-btn mt-4 ms-3">Appointment</a>
+            <script src="https://cdn.jsdelivr.net/npm/dayschedule-widget@latest/dist/dayschedule-widget.min.js"
+                defer></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const scheduleButton = document.getElementById('scheduleButton');
+
+                    scheduleButton.addEventListener('click', function () {
+                        daySchedule.initPopupWidget({
+                            url: 'https://nitesh-giri.dayschedule.com' // Replace with your DaySchedule URL
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <div class="box-col">
+            <h3>Dr. Rani</h3>
+            <img src="./assets/doctor-4.jpg" alt="">
+            <a href="/">Book Appointment</a>
+        </div>
+    </div>
+
+
+    <div class="box-row" id="arogya-products">
+        <div class="box-col">
+            <h3>Face Wash</h3>
+            <img src="./assets/box1-1.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Sunscreen</h3>
+            <img src="./assets/box1-2.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Non-Sticky Moisturiser</h3>
+            <img src="./assets/box1-3.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Toner</h3>
+            <img src="./assets/box1-4.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+
+    <div class="box-row" id="baby-care">
+        <div class="box-col">
+            <h3>Body Wash</h3>
+            <img src="./assets/box2-1.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Icy Menthol</h3>
+            <img src="./assets/box2-2.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Dusting Powder</h3>
+            <img src="./assets/box2-3.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Fragnance</h3>
+            <img src="./assets/box2-4.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+
+    <div class="products-slider" id="personal-care">
+        <h2>Summer Face Care</h2>
+        <div class="products">
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4.jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Hydrating Cleanser</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Moisturising Cream</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Foaming Cleanser</h3>
+            <img src="./assets/box3-3.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Moisturising Lotion</h3>
+            <img src="./assets/box3-4.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+
+    <div id="buy-medicine" class="products-slider-with-price">
+        <h2>Deals under ₹499</h2>
+        <div class="products">
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-10.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-2.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-3.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-4.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-5.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-6.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-7.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-8.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-9.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-4.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-cart">
+                <div class="product-image-container">
+                    <img src="./assets/product2-11.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">₹ <span>299</span>List Price: ₹399</p>
+                <h4>This product is best for you</h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="products-slider">
+        <h2>Summer Face Care</h2>
+        <div class="products">
+            <img src="./assets/product1-1.jpg" alt="">
+            <img src="./assets/product1-2.jpg" alt="">
+            <img src="./assets/product1-3.jpg" alt="">
+            <img src="./assets/product1-4.jpg" alt="">
+            <img src="./assets/product1-5.jpg" alt="">
+            <img src="./assets/product1-6.jpg" alt="">
+            <img src="./assets/product1-7.jpg" alt="">
+            <img src="./assets/product1-8.jpg" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Hydrating Cleanser</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Moisturising Cream</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Foaming Cleanser</h3>
+            <img src="./assets/box3-3.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Moisturising Lotion</h3>
+            <img src="./assets/box3-4.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+    <div class="ayurveda" id="ayurveda">
+        <h2>Ayurveda</h2>
+
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Ayurveda Oil</h3>
+            <img src="./assets/ayurveda-box1-1.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Amla Juice</h3>
+            <img src="./assets/ayurveda-box1-2.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Diabetic Protein Powder</h3>
+            <img src="./assets/ayurveda-box1-3.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Stevia</h3>
+            <img src="./assets/ayurveda-box1-4.jpg" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know Us</p>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Consult Doctors Online</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+            </ul>
+            <ul>
+                <p>Our Services</p>
+                <a href="">Order Medicine</a>
+                <a href="">Healthcare Products</a>
+                <a href="">Lab Tests</a>
+                <a href="">Find Nearest Collection Centre</a>
+            </ul>
+            <ul>
+                <p>Featured Categories</p>
+                <a href="">Top Products</a>
+                <a href="">Personal Care</a>
+                <a href="">Healthcare Devices</a>
+                <a href="">Health Food and Drinks</a>
+                <a href="">Skin Care</a>
+                <a href="">Fitness Supplements</a>
+                <a href="">Mother and Baby Care</a>
+                <a href="">Sexual Wellness</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="">Your Account</a>
+                <a href="">Returns Centre</a>
+                <a href="">100% Purchase Protection</a>
+                <a href="">Help</a>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="footer">
+        <img src="./assets/logo1.png" width="100" alt="">
+        <p>@ Mr. Nitesh Giri, Arogya.com</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

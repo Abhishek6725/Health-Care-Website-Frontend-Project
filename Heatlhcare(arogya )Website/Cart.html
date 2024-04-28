@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart</title>
+  
+  <style>
+    /* --Navbar-- */
+    * {
+      margin: 0px;
+    }
+
+    .font {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #navbar {
+      position: sticky;
+      top: 0px;
+      background-color: #10847e;
+      border: 1px solid transparent;
+      height: 90px;
+    }
+
+    #upperNav {
+      margin-top: 20px;
+      margin-left: 700px;
+      text-align: center;
+    }
+
+    #upperNav>div:first-child {
+      /* border: 1px solid red; */
+      display: flex;
+      width: 100%;
+      margin: auto;
+    }
+
+    #upperNav>div>img {
+      width: 180px
+    }
+
+    /* ffffffffffffffffffffffffffffffffffflooooooooooooooooooooooooooooooooooooootttttttttttttteeeeeeeeeerrrrrrrrrrrrrr */
+
+    #fourthdiv {
+      height: 10px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      /* border: 1px solid black; */
+      margin-top: 330px;
+      background-color: #88d9eb;
+    }
+    #rights{
+      font-size: large;
+      margin-left: 600px;
+      margin-top: -10px;
+    }
+    #navbar{
+      color: #10847e;
+    }
+    #cart {
+      margin: 20px;
+      text-align: center;
+      font-size: larger;
+      padding: 30px;
+      border: 2px solid #d14e4e;
+      border-radius: 5px;
+    }
+
+    #cart-items {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+    #checkout-btn{
+        color: rgb(37, 2, 2);
+        background-color: #eebdbd;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #cart-total {
+      margin-bottom: 20px; /* Add margin here */
+    }
+    .add-item{
+        color: rgb(241, 33, 33); /* Change button color to red */
+        cursor: pointer;
+        display: flex;
+        font-size:larger;
+        margin-top: 15px;
+        padding-bottom: 1px;
+        justify-content: center; /* Center the button horizontally */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- -- Navbar start-- -->
+  <div id="navbar">
+    <div id="upperNav">
+      <div id="logo">
+        <img src="assets/logo1.png" alt="rogya-Care image">
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- --Navbar end-- -->
+  
+  <main>
+    <section id="cart">
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div id="cart-total">
+        <h3>Total: $<span id="total-amount">0.00</span></h3>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+      
+  <!-- Add Item button -->
+  <div class="add-item">
+    <button class="add-item" onclick="addItem()">Add Item</button>
+  </div>
+    </section>
+  </main>
+
+  
+  <!-- fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+  
+  <div id="fourthdiv">
+    <div id="rights">
+      <p> &#169 2024 Arogya-Care. All Rights Reserved</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to add item
+    function addItem() {
+      window.location.href = "index.html"; // Redirect to index.html
+    }
+
+
+    
+
+
+    // Event listener for checkout button
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+      // You can implement the checkout functionality here
+      alert('Redirecting to checkout page...');
+    });
+
+  </script>
+</body>
+</html>
